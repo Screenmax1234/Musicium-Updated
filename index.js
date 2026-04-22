@@ -51,7 +51,6 @@ const client = new Discord.Client({
 const proxy = 'http://123.123.123.123:8080';
 const agent = https(proxy);
 const { SpotifyPlugin } = require("@distube/spotify");
-const { SoundCloudPlugin } = require("@distube/soundcloud");
 let spotifyoptions = {
   parallel: true,
   emitEventsAfterFetching: true,
@@ -88,8 +87,7 @@ client.distube = new DisTube(client, {
   updateYouTubeDL: true,
   customFilters: filters,
   plugins: [
-    new SpotifyPlugin(spotifyoptions),
-    new SoundCloudPlugin()
+    new SpotifyPlugin(spotifyoptions)
   ]
 })
 //Define some Global Collections

@@ -1,7 +1,7 @@
 # Musicium
 
 *An advanced Discord Music Bot with a Dashboard, using distube.js.org having an interactive button & menu system and many features!*
-**Supported Features:** *Spotify • YouTube • SoundCloud • Live Stream • Audio Filtering • DJ Roles • Autoplay • Autoresume • Dashboard • ...*
+**Supported Features:** *Spotify • YouTube • Live Stream • Audio Filtering • DJ Roles • Autoplay • Autoresume • Dashboard • ...*
 
 ***
 
@@ -38,7 +38,7 @@
 
 > 🖖 [**Repl.it Fork**](https://replit.com/@OxyTomato/Musicium)
 > 
-> - ` 0. ` have **node.js v16.6 or higher**
+> - ` 0. ` have **Node.js v24 LTS**
 > 
 > - ` 1. ` have **ffmpeg and at least 100mb Ram**
 > 
@@ -50,9 +50,9 @@
 > 
 > - ` 5. ` in `./dashboard/settings.json` Adjust the parameters!
 > 
-> - ` 6. ` `npm install` to Install the depedences If you get **PYTHON ERRORS** Try this: `npm install --python=python2.7`
+> - ` 6. ` `pnpm install` to install dependencies
 > 
-> - ` 7. ` `node .` to start the Bot
+> - ` 7. ` `pnpm start` to start the bot
 
 ***
 
