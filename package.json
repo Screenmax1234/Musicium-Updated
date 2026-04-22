@@ -1,35 +1,36 @@
 {
-  "dependencies": {
-    "@discordjs/builders": "^0.9.0",
-    "@discordjs/voice": "^0.7.5",
-    "@distube/soundcloud": "^1.0.0",
-    "@distube/spotify": "^1.0.0",
-    "colors": "^1.4.0",
-    "cpu-stat": "^2.0.1",
-    "discord.js": "^13.3.1",
-    "distube": "^3.0.3",
-    "ejs": "^3.1.6",
-    "enmap": "^5.8.7",
-    "express": "^4.17.1",
-    "express-session": "^1.17.2",
-    "ffmpeg-static": "^4.4.0",
-    "http": "^0.0.1-security",
-    "libsodium-wrappers": "^0.7.9",
-    "memorystore": "^1.6.6",
-    "os": "^0.1.2",
-    "passport": "^0.5.0",
-    "passport-discord": "^0.1.4",
-    "session": "^0.1.0",
-    "url": "^0.11.0"
-  },
   "name": "musicium_r8_dashboard",
-  "description": "An advanced Discord Music Bot with a Dashboard, using distube.js.org having an interactive button & menu system and many features! Supported Features: Spotify • YouTube • SoundCloud • Live Stream • Audio Filtering • DJ Roles • Autoplay • Autoresume • Dashboard + Live Queue • ...",
+  "description": "An advanced Discord Music Bot with a Dashboard, using distube.js.org having an interactive button & menu system and many features! Supported Features: Spotify \u2022 YouTube \u2022 SoundCloud \u2022 Live Stream \u2022 Audio Filtering \u2022 DJ Roles \u2022 Autoplay \u2022 Autoresume \u2022 Dashboard + Live Queue \u2022 ...",
   "version": "8.1.0",
+  "private": true,
   "main": "index.js",
-  "devDependencies": {},
+  "packageManager": "pnpm@10.13.1",
+  "engines": {
+    "node": ">=24.0.0 <25",
+    "pnpm": ">=10"
+  },
   "scripts": {
-    "test": "node index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node --check index.js",
+    "check": "node --check index.js && node --check dashboard/index.js"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.16.0",
+    "@discordjs/voice": "^0.16.1",
+    "@distube/spotify": "latest",
+    "colors": "latest",
+    "cpu-stat": "latest",
+    "discord.js": "^13.17.1",
+    "distube": "latest",
+    "ejs": "latest",
+    "enmap": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "ffmpeg-static": "latest",
+    "libsodium-wrappers": "latest",
+    "memorystore": "latest",
+    "passport": "latest",
+    "passport-discord": "latest"
   },
   "repository": {
     "type": "git",
